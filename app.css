@@ -1,0 +1,32 @@
+body {
+  background-color: #f0bd5e;
+}
+
+#logo-row {
+  padding: 50px 0;
+}
+
+#account-row {
+  background-color: #563d7c;
+  color: #cdbfe3;
+  padding: 10px;
+
+}
+
+h3 {
+  display: inline;
+}
+
+#make-a-payment {
+  float: right;
+}
+
+.modal input.radio {
+  display: inline;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #1275e8;
+    border-color: #1275e8;
+}
