@@ -37,14 +37,218 @@
           <span aria-hidden="true">&times;</span>
           <span class="sr-only">Close</span>
         </button>
-        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+        <h4 class="modal-title">Who would you like to pay?</h4>
       </div>
       <div class="modal-body">
-        ...
+        <div>
+            <input type="radio" class="radio" id="pay-target-1" checked="checked" value="1" name="WhoWouldYouLikeToPay">
+            <label for="pay-target-1">A person or organisation you've paid before</label>
+        </div>
+        <div>
+            <input type="radio" class="radio" id="pay-target-2" value="2" name="WhoWouldYouLikeToPay">
+            <label for="pay-target-2">A new person or organisation</label>
+        </div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-stage-2">Continue</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="modal-stage-2">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+          <span class="sr-only">Close</span>
+        </button>
+        <h4 class="modal-title">Enter payment details</h4>
+      </div>
+      <div class="modal-body">
+<form>
+  <div class="form-group row">
+    <label for="inputEmail3" class="col-sm-2 form-control-label">Name of payee</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control" id="inputEmail3" placeholder="Name of payee">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="inputEmail3" class="col-sm-2 form-control-label">Sort code</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control" id="inputEmail3" placeholder="Sort code">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="inputEmail3" class="col-sm-2 form-control-label">Account number</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control" id="inputEmail3" placeholder="Account number">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="inputEmail3" class="col-sm-2 form-control-label">Amount</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control" id="inputEmail3" placeholder="Amount">
+    </div>
+  </div>
+</form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-stage-3">Continue</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="modal-stage-3">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+          <span class="sr-only">Close</span>
+        </button>
+        <h4 class="modal-title">Check and confirm payment details</h4>
+      </div>
+      <div class="modal-body">
+<div class="wiz-body">
+            
+<div class="form-table form-table-wide form-table-ccc margbz bordbz">
+    <!-- 'From' details section-->
+    
+            <div class="form-table-row form-table-row-last bordb">
+                <div class="form-table-row">
+                    <div class="cell-one">
+                        <div class="inner-cell">
+                            <label>Payee:</label>
+                        </div>
+                    </div>
+                    <div class="cell-two"> 
+                        <div class="inner-cell">tom</div>
+                    </div>
+                    <div class="cell-three"></div>
+                </div>
+            
+                    <div class="form-table-row">
+                        <div class="cell-one">
+                            <div class="inner-cell">
+                                <label>Your description:</label>
+                            </div>
+                        </div>
+                        <div class="cell-two"> 
+                            <div class="inner-cell">tom</div>
+                        </div>
+                        <div class="cell-three"></div>
+                    </div>
+              
+                    <div class="form-table-row">
+                        <div class="cell-one">
+                            <div class="inner-cell">
+                                <label>Reference:</label>
+                            </div>
+                        </div>
+                        <div class="cell-two"> 
+                            <div class="inner-cell">tom</div>
+                        </div>
+                        <div class="cell-three"></div>
+                    </div>
+             
+                    <div class="form-table-row">
+                        <div class="cell-one">
+                            <div class="inner-cell">
+                                <label>Sort code:</label>
+                            </div>
+                        </div>
+                        <div class="cell-two"> 
+                            <div class="inner-cell">11-11-11</div>
+                        </div>
+                        <div class="cell-three"></div>
+                    </div>
+             
+                    <div class="form-table-row">
+                        <div class="cell-one">
+                            <div class="inner-cell">
+                                <label>Account number:</label>
+                            </div>
+                        </div>
+                        <div class="cell-two"> 
+                            <div class="inner-cell">11111111</div>
+                        </div>
+                        <div class="cell-three"></div>
+                    </div>
+             
+          </div>
+    
+
+    <!-- Payment details section-->
+    <div class="form-table-row form-table-row-top">
+        <div class="cell-one">
+            <div class="padl textl heading">
+                <label>Payment details:</label>
+            </div>
+        </div>
+        <div class="cell-two"></div>
+        <div class="cell-three"></div>
+    </div>
+    <div class="form-table-row">
+        <div class="cell-one">
+            <div class="inner-cell">
+                <label>Amount: </label>
+            </div>
+        </div>
+        <div class="cell-two">
+            <div class="inner-cell">£1.00</div>
+        </div>
+        <div class="cell-three"></div>
+    </div>
+    <div class="form-table-row form-table-row-last bordb">
+        <div class="cell-one">
+            <div class="inner-cell">
+                <label>To be paid on:</label>
+            </div>
+        </div>
+        <div class="cell-two">
+            <div class="inner-cell">08/11/2015</div>
+        </div>
+        <div class="cell-three"></div>
+    </div>
+</div>
+
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-stage-4">Continue</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="modal-stage-5">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+          <span class="sr-only">Close</span>
+        </button>
+        <h4 class="modal-title">Enter code generated by Security Token</h4>
+      </div>
+      <div class="modal-body">
+<form>
+  <div class="form-group row">
+    <label for="inputEmail3" class="col-sm-2 form-control-label">Security Code</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control" id="inputEmail3" placeholder="Security Code">
+    </div>
+  </div>
+</form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-stage-4">Continue</button>
       </div>
     </div>
   </div>
